@@ -1,0 +1,23 @@
+def getSum(self, a, b):
+
+    
+    l = [0]
+    for i in range(abs(a)):
+        if a<=0:
+            l.append(-1)
+        elif a>=0: 
+            l.append(1)
+
+    for i in range(abs(b)):
+        if b<=0:
+            l.append(-1)
+        elif b>=0: 
+            l.append(1)
+
+
+    return sum(l)
+    """
+    :type a: int
+    :type b: int
+    :rtype: int
+    """
